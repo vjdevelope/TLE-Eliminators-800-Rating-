@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int t;
+   cin>>t;
+   
+  while(t--)
+  {
+      int n;
+      cin>>n;
+      
+      int a[n];
+      for(int i=0;i<n;i++)
+      {
+          cin>>a[i];
+      }
+      
+  if(a[0]!=1) //if 1 is at it's correct position only then the array can be sorted because we cant move first position and it should be 1 always.
+  cout<<"NO"<<endl;
+  else
+  cout<<"YES"<<endl;
+  
+  }
+    return 0;
+}
