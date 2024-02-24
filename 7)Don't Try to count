@@ -1,0 +1,31 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,m;
+        cin>>n>>m;
+        
+	    string x,s;
+        cin>>x>>s;
+        
+        bool check=false;
+    for(int i=0;i<=5;i++)
+    {
+    	if(x.find(s)!=string :: npos)
+    	{
+    		cout<<i<<endl;
+    		check=true;
+    		break;
+		}
+		x.append(x);
+	}
+      if(!check)
+      cout<<"-1"<<endl;
+  }
+   return 0;
+}
