@@ -1,0 +1,44 @@
+ //xor of even times is 0 and odd times that number itself ,so when size is even at that time x will not any impact and when it is odd the xor of all element is the ans bec.when xor ans with itself we can get zero
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{  
+     int t;
+     cin>>t;
+     while(t--)
+     {
+    int n,ans=0;
+    cin>>n;
+    
+    int a[n];
+    
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        ans=ans^a[i];
+    }
+    
+    if(n%2==0) 
+    {
+        if(ans==0)
+        {
+            cout<<"0"<<endl;
+        }
+        else
+        {
+            cout<<"-1"<<endl;
+        }
+    }
+    else
+    {
+        cout<<ans<<endl;
+    }
+    
+     }
+    return 0;
+}
