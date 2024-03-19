@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int t;
+     cin>>t;
+     
+     while(t--)
+     {
+         int n;
+         cin>>n;
+         
+         string s;
+         cin>>s;
+         
+         int temp1=0,temp2=n-1,count=0;
+         
+         while(temp1<temp2)
+         {
+             if(s[temp1]!=s[temp2])
+             {
+                 count++;
+                 temp1++;
+                 temp2--;
+             }
+             else
+             {
+                 break;
+             }
+         }
+         cout<<n-(2*count)<<endl;
+     }
+  
+    return 0;
+}
