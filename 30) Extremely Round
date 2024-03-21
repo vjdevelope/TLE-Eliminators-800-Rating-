@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    
+    while(t--)
+    {
+        int n,count=0,k;
+        cin>>n;
+      
+        k=n;
+      while(n!=0)
+      {
+        n=n/10;
+        count++;
+      }
+    if(count==1)
+    {
+        cout<<k<<endl;
+    }
+    else if(count==2)
+    {
+        cout<<(k/10)+9<<endl;
+    }
+     else if(count==3)
+    {
+        cout<<(k/100)+18<<endl;
+    }
+     else if(count==4)
+    {
+        cout<<(k/1000)+27<<endl;
+    }
+      else if(count==5)
+    {
+        cout<<(k/10000)+36<<endl;
+    }
+      else if(count==6)
+    {
+        cout<<(k/100000)+45<<endl;
+    }
+    
+    }
+
+    return 0;
+}
